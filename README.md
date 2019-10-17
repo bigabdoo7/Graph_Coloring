@@ -19,7 +19,7 @@ Simulated annealing in graph coloring problem
 |1000.5  |122       |
 |1000.9  |311       |
 
-## Algritm
+## Algoritm
 
 The greedy algoritm is a deterministic algorithm, given an order of nodes(vertices), it generates a single solution. So our simulated annealing algorithm tries to find the optimal order that produces the best solution. To find neighbours of the order, we use the 2-opt algorithm; it takes a part in the middle of a sequence, inverts it, and then reatachs it. Given that the greedy algorithm is deterministic, when computing an order's neighbour's solution, the first part is unchainged, thet's why we called our function Partial greedy, because it only calculates tha latter part.
 
@@ -33,4 +33,4 @@ gcc main.c misc.c
 
 The command above compiles the code, the option (-o name_of_output) let you choose a name for the executable. 
 
-As requested, the executable takes a name the name of the file and adds "./pb" in the begining, and ".col" in the end. It generates a file in the same directory with the same name and extension ".sol".
+As requested, the executable takes a name the name of the file and adds "./pb" in the begining, and ".col" in the end. It generates a file containing the solution in the same directory with the same name and extension ".sol".
