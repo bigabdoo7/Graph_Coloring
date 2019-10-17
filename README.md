@@ -1,9 +1,10 @@
 # Graph_Coloring
 Simulated annealing in graph coloring problem
 
-##Results
+## Results
 
 |File    |Solution  |
+|--------|----------|
 |125.1   |6         |
 |125.5   |22        |
 |125.9   |49        |
@@ -18,14 +19,14 @@ Simulated annealing in graph coloring problem
 |1000.5  |122       |
 |1000.9  |311       |
 
-##Algritm
+## Algritm
 
 The greedy algoritm is a deterministic algorithm, given an order of nodes(vertices), it generates a single solution. So our simulated annealing algorithm tries to find the optimal order that produces the best solution. To find neighbours of the order, we use the 2-opt algorithm; it takes a part in the middle of a sequence, inverts it, and then reatachs it. Given that the greedy algorithm is deterministic, when computing an order's neighbour's solution, the first part is unchainged, thet's why we called our function Partial greedy, because it only calculates tha latter part.
 
 The parameter used for simulated annealing is coolingFactor = 0.95 with an initial tempreture of 1. The temperature decreases exponentially.
 For the 2-opt algorithm, we used a cut of 7 nodes.
 
-##Compiling the code
+## Compiling the code
 We compiled our code using gcc version 5.4.0, in a 64bit machine.
 
 gcc main.c misc.c 
