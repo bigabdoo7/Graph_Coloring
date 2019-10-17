@@ -32,3 +32,5 @@ We compiled our code using gcc version 5.4.0, in a 64bit machine.
 gcc main.c misc.c 
 
 The command above compiles the code, the option (-o name_of_output) let you choose a name for the executable. 
+
+As requested, the executable takes a name the name of the file and adds "./pb" in the begining, and ".col" in the end. It generates a file in the same directory with the same name and extension ".sol".
